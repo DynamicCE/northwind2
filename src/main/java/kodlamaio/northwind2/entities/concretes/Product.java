@@ -14,7 +14,7 @@ class Product {
     @Column(name = "product_id")
     @Id
     @GeneratedValue
-    private int id ;
+    private int id;
     @Column(name = "category_id")
     private int categoryId;
     @Column(name = "product_name")
@@ -23,6 +23,11 @@ class Product {
     private short unitsInStock;
     @Column(name = "quantity_per_unit")
     private String quantityPerUnit;
+
+
+    public
+    Product () {
+    }
 
     public
     Product ( int id, int categoryId, String productName, short unitsInStock, String quantityPerUnit ) {
